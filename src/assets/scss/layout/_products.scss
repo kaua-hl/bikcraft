@@ -1,0 +1,40 @@
+@use "../abstracts/" as *;
+
+.products-list {
+  h2 {
+    margin-bottom: 40px;
+  }
+  ul {
+    max-width: 1400px;
+    margin: 0px auto;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 40px;
+    overflow-x: auto;
+  }
+}
+
+.products-list__card a {
+  img {
+    margin-bottom: 16px;
+  }
+  h3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 8px;
+      width: 12px;
+      margin-right: 8px;
+      background-color: $cor-p1;
+      transition: width 0.2s;
+    }
+  }
+}
+
+.products-list__card:hover h3::before {
+  width: 22px;
+}

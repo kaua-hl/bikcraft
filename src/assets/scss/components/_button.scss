@@ -1,0 +1,14 @@
+@use "../abstracts";
+
+.c-button {
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  text-transform: uppercase;
+  color: abstracts.$cor-p5;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  //   max-width: max-content;
+  border: none;
+  cursor: pointer;
+}
